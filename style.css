@@ -1,0 +1,257 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #0a3feb;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #007bff;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* Product Listings */
+.product-listings {
+  padding: 40px 20px;
+}
+
+.product-listings h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.product-card .price {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #28a745;
+}
+
+.add-to-cart-btn {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Cart Modal */
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cart-summary button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-summary button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+  color: white;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #797a7a;
+  padding: 40px 20px;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #0a0000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: rgb(7, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
